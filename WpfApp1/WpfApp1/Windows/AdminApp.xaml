@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.Windows.AdminApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Windows"
+        mc:Ignorable="d"
+       Title="AdminApp" Height="600" Width="800" Icon="/Images/logo.png" Background="#EF8B2F" Top="120" Left="50" WindowStartupLocation="Manual">
+    <Grid RenderTransformOrigin="0.562,0.447">
+        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="200" HorizontalAlignment="Left" Background="#EF8B2F" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="RestId" Binding="{Binding RestId}"/>
+                <DataGridTextColumn Header="RestName" Binding="{Binding RestName}"/>
+                <DataGridTextColumn Header="RestSourse" Binding="{Binding RestSourse}" MaxWidth="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="220,230,0,0" VerticalAlignment="Top" Width="125" RenderTransformOrigin="-0.112,-0.597" Height="50" Click="Add_Click" Loaded="Button_Loaded"/>
+        <TextBox x:Name="IdText" HorizontalAlignment="Left" Height="42" Margin="220,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="NameText" HorizontalAlignment="Left" Height="45" Margin="220,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="220,294,0,0" VerticalAlignment="Top" Width="125" Height="41" Click="Delete_Click"/>
+        <Button Content="Insert" HorizontalAlignment="Left" Margin="220,350,0,0" VerticalAlignment="Top" Width="125" Height="48" Click="Insert_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="518,324,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    </Grid>
+
+</Window>
