@@ -54,7 +54,7 @@ namespace WpfApp1.Windows
             else
             {
                 sidePanel.Width -= 1;
-                if (sidePanel.Width <= 30)
+                if (sidePanel.Width <= 35)
                 {
                     timer.Stop();
                     hidden = true;

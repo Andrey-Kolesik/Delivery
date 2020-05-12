@@ -5,54 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-        Title="UserMain" Height="768" Width="1366" Icon="/Images/logo.png" Top="120" Left="50" WindowStartupLocation="Manual" ResizeMode="NoResize" WindowStyle="None">
+        Title="UserMain" Height="600" Width="800" Top="120" Left="50" WindowStartupLocation="CenterScreen" Visibility="Visible">
     <Grid Background="#FFE2E2E2">
         <Grid x:Name="panelHeader" VerticalAlignment="Top" Height="50" Background="#E6DA76" MouseDown="PanelHeader_MouseDown">
             <Image Source="/Images/logo.png" HorizontalAlignment="Center" Height="45"/>
         </Grid>
         <Grid x:Name="sidePanel" Background="#E6DA76" HorizontalAlignment="Left" Width="150">
             <StackPanel>
-                <Grid Height="150" Background="White">
+                <Grid Height="50" Background="#FFDEAF94">
                     <Button HorizontalAlignment="Right" Height="20" VerticalAlignment="top" Background="Transparent" BorderBrush="Transparent" Click="Button_Click">
                         <Image Source="/icons/menu.png"/>
                     </Button>
                 </Grid>
-                <ListView FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
                     <ListViewItem Height="30" FontWeight="Bold">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icons/account.png" Height="20" VerticalAlignment="Center"/>
-                            <TextBlock Text="Account" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                            <Button Content="Account" Margin="15,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}"/>
                         </StackPanel>
                     </ListViewItem>
                 </ListView>
-                <ListView FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
                     <ListViewItem Height="30" FontWeight="Bold">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icons/restaurant.png" Height="20" VerticalAlignment="Center"/>
-                            <TextBlock Text="Restaurants" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                            <Button Content="Restaurants" Margin="15,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListView FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
                         <ListViewItem Height="30" FontWeight="Bold">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icons/search.png" Height="20" VerticalAlignment="Center"/>
-                                <TextBlock Text="Search" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                                <Button Content="Search" Margin="15,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}"/>
                             </StackPanel>
                         </ListViewItem>
                     </ListView>
-                    <ListView FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
                         <ListViewItem Height="30" FontWeight="Bold">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icons/discount.png" Height="20" VerticalAlignment="Center"/>
-                                <TextBlock Text="Discount" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                                <Button Content="Discount" Margin="15,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}"/>
                             </StackPanel>
                         </ListViewItem>
                     </ListView>
-                    <ListView FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
                         <ListViewItem Height="30" FontWeight="Bold">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icons/basket.png" Height="20" VerticalAlignment="Center"/>
-                                <TextBlock Text="Basket" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                                <Button Content="Basket" Margin="15,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}"/>
                             </StackPanel>
                         </ListViewItem>
                     </ListView>

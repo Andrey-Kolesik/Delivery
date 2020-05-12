@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-         Title="Registration" Height="600" Width="800" Icon="/Images/logo.png" Background="#EF8B2F" Top="120" Left="50" WindowStartupLocation="Manual">
+         Title="Registration" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="Manual">
     <StackPanel Margin="30, 10, 30, 10" Name="myregistration">
         <Label Content="Регистрация" FontSize="32" HorizontalAlignment="Left" FontWeight="Bold"/>
         <Label Content="Создайте нового пользователя" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold"/>
@@ -15,7 +15,15 @@
         <PasswordBox x:Name="RegPassword" Background="#C4C4C4" FontSize="30" Width="400" HorizontalAlignment="Left"/>
         <Label Content="Пароль" FontSize="24" Margin="0, 20, 0 , 0"/>
         <PasswordBox x:Name="Reg2Password" Background="#C4C4C4" FontSize="30" Width="400" HorizontalAlignment="Left"/>
-        <Button x:Name="Done" Content="Готово" Click="Done_Click" Background="#64D230" FontSize="30" Margin="10, -100" HorizontalAlignment="Right" Width="200" Height="60" BorderBrush="Black"/>
+        <Button x:Name="Done" Content="Готово" Click="Done_Click" FontSize="32" Margin="10, -100" HorizontalAlignment="Right" Width="200" Height="60" BorderBrush="Black" FontFamily="Century Gothic" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFE6B7B7" Offset="0.794"/>
+                    <GradientStop Color="#FFCB1212"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <Label Content="При входе или регистрации вы принимаете условия" FontSize="20" Margin="0, 70, 0, 0"/>
         <Label Content="пользовательского соглашения." FontSize="20" Margin="0, -10, 0, 0" FontWeight="Bold"/>
     </StackPanel>
