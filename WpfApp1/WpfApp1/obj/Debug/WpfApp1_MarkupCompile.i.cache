@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Андрей\(1)2 курс\ООП курсач\код\qwe\WpfApp1\WpfApp1\obj\Debug\
+D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-D:\Андрей\(1)2 курс\ООП курсач\код\qwe\WpfApp1\WpfApp1\App.xaml
-4902396529
+D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\App.xaml
+539313302
 
-18-433107050
-18469666961
-Windows\AdminApp.xaml;Windows\LoginScreen.xaml;Windows\MainWindow.xaml;Windows\Registration.xaml;
+19-953108674
+18-853464689
+Windows\AdminApp.xaml;Windows\LoginScreen.xaml;Windows\MainWindow.xaml;Windows\Registration.xaml;Windows\UserMain.xaml;
 
-False
+True
 

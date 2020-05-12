@@ -7,19 +7,21 @@
         mc:Ignorable="d"
        Title="AdminApp" Height="600" Width="800" Icon="/Images/logo.png" Background="#EF8B2F" Top="120" Left="50" WindowStartupLocation="Manual">
     <Grid RenderTransformOrigin="0.562,0.447">
-        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="200" HorizontalAlignment="Left" Background="#EF8B2F" Margin="10">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="RestId" Binding="{Binding RestId}"/>
+        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="270" HorizontalAlignment="Left" Background="#EF8B2F" Margin="10" FontSize="15">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="RestId" Binding="{Binding RestId}" FontSize="10"/>
                 <DataGridTextColumn Header="RestName" Binding="{Binding RestName}"/>
                 <DataGridTextColumn Header="RestSourse" Binding="{Binding RestSourse}" MaxWidth="100"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="220,230,0,0" VerticalAlignment="Top" Width="125" RenderTransformOrigin="-0.112,-0.597" Height="50" Click="Add_Click" Loaded="Button_Loaded"/>
-        <TextBox x:Name="IdText" HorizontalAlignment="Left" Height="42" Margin="220,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="NameText" HorizontalAlignment="Left" Height="45" Margin="220,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="220,294,0,0" VerticalAlignment="Top" Width="125" Height="41" Click="Delete_Click"/>
-        <Button Content="Insert" HorizontalAlignment="Left" Margin="220,350,0,0" VerticalAlignment="Top" Width="125" Height="48" Click="Insert_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="518,324,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="310,139,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.112,-0.597" Height="40" Click="Add_Click" Loaded="Button_Loaded"/>
+        <TextBox x:Name="IdText" HorizontalAlignment="Left" Height="45" Margin="443,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="NameText" HorizontalAlignment="Left" Height="45" Margin="443,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="425,139,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Delete_Click"/>
+        <Button Content="Insert" HorizontalAlignment="Left" Margin="541,139,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Insert_Click"/>
+        <Button Content="Image" HorizontalAlignment="Left" Margin="656,139,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" Height="40"/>
+        <Label Content="RestId" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label Content="RestName" HorizontalAlignment="Left" Margin="310,60,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488"/>
     </Grid>
 
 </Window>
