@@ -74,6 +74,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DataModel\UserContext.cs" />
+    <Compile Include="Pages\RestPage.xaml.cs">
+      <DependentUpon>RestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AdminApp.xaml.cs">
       <DependentUpon>AdminApp.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,14 @@
     <Compile Include="Windows\UserMain.xaml.cs">
       <DependentUpon>UserMain.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\RestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RestRes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AdminApp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -164,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ComingSoon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

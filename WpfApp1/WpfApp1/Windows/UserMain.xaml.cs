@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,6 +69,14 @@ namespace WpfApp1.Windows
             {
                 DragMove();
             }
+        }
+
+        private void RestBtn_Click(object sender, RoutedEventArgs e)
+        {
+            name.Text = "";
+            userName.Text = "";
+            logo.Height = 0;
+            main.Content = new Pages.RestPage();
         }
     }
 }

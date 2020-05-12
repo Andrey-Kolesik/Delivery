@@ -58,3 +58,6 @@ D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\Wp
 D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\Pages\RestPage.g.cs
+D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\Pages\RestPage.baml
+D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\obj\Debug\RestRes.baml

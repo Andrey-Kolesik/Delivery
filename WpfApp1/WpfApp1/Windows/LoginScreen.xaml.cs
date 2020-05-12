@@ -47,10 +47,10 @@ namespace WpfApp1.Windows
                 else
                 {
 
-                    MainWindow mainwindow = new MainWindow();
-                    mainwindow.Show();
+                    UserMain userMain = new UserMain();
+                    userMain.Show();
                     Close();
-                    MessageBox.Show($"Вы зашли как {Name}");
+                    userMain.userName.Text = Name;
                 }
 
             }
