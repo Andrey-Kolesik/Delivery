@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-         Title="Login" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="Manual">
+         Title="Login" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen">
     <StackPanel Margin="30, 10, 30, 10" Name="mylogin">
         <Label Content="Вход" FontSize="32" HorizontalAlignment="Left" FontWeight="Bold"/>
         <Separator Background="Black" Margin="5, 10"/>

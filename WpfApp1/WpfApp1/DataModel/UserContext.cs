@@ -15,6 +15,9 @@
 
         public virtual DbSet<Restaurants> restaurants { get; set; }
         public virtual DbSet<User> user { get; set; }
+        public virtual DbSet<Menu> menu { get; set; }
+        public virtual DbSet<Orders> orders { get; set; }
+
     }
 
     public class User
@@ -37,6 +40,34 @@
 
          
     }
+    public class Menu
+    {
+        [Key]
+        public int FoodId { get; set; }
+
+        public string FoodName { get; set; }
+
+        public int FoodCount { get; set; }
+
+        public int RestId { get; set; }
+
+        public double Price { get; set; }
+    }
+    public class Orders
+    {
+        [Key]
+        public int IdOrder { get; set; }
+        
+        public int NumberOrd { get; set; }
+
+        public int IdUser { get; set; }
+
+        public int IdFood { get; set; }
+
+        public string Adress { get; set; }
+    }
+
+   
 
 
 

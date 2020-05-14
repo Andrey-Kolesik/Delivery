@@ -21,6 +21,7 @@ namespace WpfApp1.Windows
     public partial class AdminApp : Window
     {
         UserContext db;
+        AdminMenu adminMenu;
         public AdminApp()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace WpfApp1.Windows
         private void Button_Loaded(object sender, RoutedEventArgs e)
         {
             db = new UserContext();
+            adminMenu = new AdminMenu();
             myDataGrid.ItemsSource = db.restaurants.ToList();
         }
 
@@ -41,7 +43,8 @@ namespace WpfApp1.Windows
             rest.RestName = NameText.Text;
             db.restaurants.Add(rest);
             db.SaveChanges();
-            myDataGrid.ItemsSource = db.restaurants.ToList();
+            myDataGrid.ItemsSource = db.restaurants.ToList(); 
+            adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
@@ -51,6 +54,7 @@ namespace WpfApp1.Windows
             db.restaurants.Remove(query);
             db.SaveChanges();
             myDataGrid.ItemsSource = db.restaurants.ToList();
+            adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
 
         }
 
@@ -61,6 +65,7 @@ namespace WpfApp1.Windows
             query.RestName = NameText.Text;
             db.SaveChanges();
             myDataGrid.ItemsSource = db.restaurants.ToList();
+            adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -75,10 +80,21 @@ namespace WpfApp1.Windows
                 query.RestSourse = src;
                 db.SaveChanges();
                 myDataGrid.ItemsSource = db.restaurants.ToList();
+                adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
 
             }
 
  
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Admin admin = new Admin();
+                admin.Show();
+                Close();
+            }
         }
     }
 }

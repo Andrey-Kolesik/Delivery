@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Андрей\(1)2 курс\ООП курсач\код\qwe\Delivery\WpfApp1\WpfApp1\App.xaml
-71632873413
+10-566728216
 
-16-931823401
+39-891597802
 18-853464689
-Pages\RestPage.xaml;RestRes.xaml;Windows\AdminApp.xaml;Windows\LoginScreen.xaml;Windows\MainWindow.xaml;Windows\Registration.xaml;Windows\UserMain.xaml;
+Pages\OrderFoods.xaml;Pages\RestPage.xaml;RestRes.xaml;Windows\Admin.xaml;Windows\AdminApp.xaml;Windows\AdminMenu.xaml;Windows\LoginScreen.xaml;Windows\MainWindow.xaml;Windows\Registration.xaml;Windows\UserMain.xaml;
 
 False
 

@@ -56,6 +56,14 @@
                             </StackPanel>
                         </ListViewItem>
                     </ListView>
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="Black" BorderBrush="Transparent" Background="Transparent">
+                        <ListViewItem Height="30" FontWeight="Bold">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/icons/basket.png" Height="20" VerticalAlignment="Center"/>
+                                <Button Content="OrderFood" Margin="15,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
                 </ListView>
             </StackPanel>
         </Grid>

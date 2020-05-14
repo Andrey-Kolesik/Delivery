@@ -11,6 +11,7 @@ namespace WpfApp1.Windows
     /// </summary>
     public partial class LoginScreen : Window
     {
+        
         UserContext userDB;
         int IdIccount;
         public static string name;
@@ -38,7 +39,7 @@ namespace WpfApp1.Windows
                 if (this.IdIccount == 3)
                 {
 
-                    AdminApp admin = new AdminApp();
+                    Admin admin = new Admin();
                     admin.Show();
                     Close();
                     MessageBox.Show($"Вы зашли как администратор");
@@ -51,6 +52,7 @@ namespace WpfApp1.Windows
                     userMain.Show();
                     Close();
                     userMain.userName.Text = Name;
+                    UserMain.Id = IdIccount;
                 }
 
             }

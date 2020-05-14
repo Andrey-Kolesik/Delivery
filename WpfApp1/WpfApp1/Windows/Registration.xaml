@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-         Title="Registration" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="Manual">
+         Title="Registration" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen">
     <StackPanel Margin="30, 10, 30, 10" Name="myregistration">
         <Label Content="Регистрация" FontSize="32" HorizontalAlignment="Left" FontWeight="Bold"/>
         <Label Content="Создайте нового пользователя" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold"/>

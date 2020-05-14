@@ -1,0 +1,24 @@
+﻿<Page x:Class="WpfApp1.Pages.OrderFoods"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="OrderFoods">
+
+    <Grid x:Name="OrdPage" Background="#FFDEAF94">
+        <ListBox x:Name="List" HorizontalAlignment="Left" Height="162" Margin="502,73,0,0" VerticalAlignment="Top" Width="196"/>
+        <ListBox x:Name="list2" HorizontalAlignment="Left" Height="99" Margin="274,294,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Выбрать" HorizontalAlignment="Left" Margin="550,240,0,0" VerticalAlignment="Top" Width="132" Height="44" Click="Button_Click"/>
+        <ListBox x:Name="list3" HorizontalAlignment="Left" Height="99" Margin="384,294,0,0" VerticalAlignment="Top" Width="110"/>
+        <ListBox x:Name="list4" HorizontalAlignment="Left" Height="99" Margin="164,294,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Выбрать" HorizontalAlignment="Left" Margin="325,401,0,0" VerticalAlignment="Top" Width="117" Height="39" Click="Button_Click_1"/>
+        <ListBox x:Name="list5" HorizontalAlignment="Left" Height="94" Margin="84,92,0,0" VerticalAlignment="Top" Width="99"/>
+        <ListBox x:Name="list6" HorizontalAlignment="Left" Height="94" Margin="206,92,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button Content="Принять" HorizontalAlignment="Left" Margin="84,221,0,0" VerticalAlignment="Top" Width="110" Height="29" Click="Button_Click_2"/>
+        <Button Content="Отменить" HorizontalAlignment="Left" Margin="224,221,0,0" VerticalAlignment="Top" Width="110" Height="29" Click="delete"/>
+        <TextBox x:Name="adress" HorizontalAlignment="Left" Height="50" Margin="224,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148"/>
+    </Grid>
+</Page>

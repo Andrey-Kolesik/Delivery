@@ -72,13 +72,62 @@
     <Compile Include="Migrations\202005111413333_AddRest1.Designer.cs">
       <DependentUpon>202005111413333_AddRest1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005131240537_AddMenu.cs" />
+    <Compile Include="Migrations\202005131240537_AddMenu.Designer.cs">
+      <DependentUpon>202005131240537_AddMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131742111_AddOrders.cs" />
+    <Compile Include="Migrations\202005131742111_AddOrders.Designer.cs">
+      <DependentUpon>202005131742111_AddOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131835450_Delete.cs" />
+    <Compile Include="Migrations\202005131835450_Delete.Designer.cs">
+      <DependentUpon>202005131835450_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131841391_Delete1.cs" />
+    <Compile Include="Migrations\202005131841391_Delete1.Designer.cs">
+      <DependentUpon>202005131841391_Delete1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131843030_Add.cs" />
+    <Compile Include="Migrations\202005131843030_Add.Designer.cs">
+      <DependentUpon>202005131843030_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131926033_insert.cs" />
+    <Compile Include="Migrations\202005131926033_insert.Designer.cs">
+      <DependentUpon>202005131926033_insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131957352_Delete2.cs" />
+    <Compile Include="Migrations\202005131957352_Delete2.Designer.cs">
+      <DependentUpon>202005131957352_Delete2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005131959067_Add1.cs" />
+    <Compile Include="Migrations\202005131959067_Add1.Designer.cs">
+      <DependentUpon>202005131959067_Add1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005132354533_return.cs" />
+    <Compile Include="Migrations\202005132354533_return.Designer.cs">
+      <DependentUpon>202005132354533_return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005132357146_new.cs" />
+    <Compile Include="Migrations\202005132357146_new.Designer.cs">
+      <DependentUpon>202005132357146_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DataModel\UserContext.cs" />
+    <Compile Include="Pages\OrderFoods.xaml.cs">
+      <DependentUpon>OrderFoods.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RestPage.xaml.cs">
       <DependentUpon>RestPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AdminApp.xaml.cs">
       <DependentUpon>AdminApp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AdminMenu.xaml.cs">
+      <DependentUpon>AdminMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
@@ -86,6 +135,10 @@
     <Compile Include="Windows\UserMain.xaml.cs">
       <DependentUpon>UserMain.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\OrderFoods.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RestPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,7 +147,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AdminApp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AdminMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +206,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005111413333_AddRest1.resx">
       <DependentUpon>202005111413333_AddRest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131240537_AddMenu.resx">
+      <DependentUpon>202005131240537_AddMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131742111_AddOrders.resx">
+      <DependentUpon>202005131742111_AddOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131835450_Delete.resx">
+      <DependentUpon>202005131835450_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131841391_Delete1.resx">
+      <DependentUpon>202005131841391_Delete1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131843030_Add.resx">
+      <DependentUpon>202005131843030_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131926033_insert.resx">
+      <DependentUpon>202005131926033_insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131957352_Delete2.resx">
+      <DependentUpon>202005131957352_Delete2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005131959067_Add1.resx">
+      <DependentUpon>202005131959067_Add1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005132354533_return.resx">
+      <DependentUpon>202005132354533_return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005132357146_new.resx">
+      <DependentUpon>202005132357146_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

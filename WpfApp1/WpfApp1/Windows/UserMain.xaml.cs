@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using WpfApp1.Pages;
 
 namespace WpfApp1.Windows
 {
@@ -21,6 +22,7 @@ namespace WpfApp1.Windows
     /// </summary>
     public partial class UserMain : Window
     {
+        public static int Id;
         DispatcherTimer timer;
         double panelWidth;
         bool hidden;
@@ -34,6 +36,7 @@ namespace WpfApp1.Windows
             timer.Tick += Timer_Tick;
 
             panelWidth = sidePanel.Width;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -76,7 +79,17 @@ namespace WpfApp1.Windows
             name.Text = "";
             userName.Text = "";
             logo.Height = 0;
-            main.Content = new Pages.RestPage();
+            main.Content = new RestPage();
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            name.Text = "";
+            userName.Text = "";
+            logo.Height = 0;
+            main.Content = new OrderFoods();
+
         }
     }
 }

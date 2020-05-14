@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-       Title="AdminApp" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="Manual">
+       Title="AdminApp" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
     <Grid RenderTransformOrigin="0.562,0.447">
         <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="270" HorizontalAlignment="Left" Background="#FFF5E346" Margin="10" FontSize="15">
             <DataGrid.Columns >
-                <DataGridTextColumn Header="RestId" Binding="{Binding RestId}" FontSize="10"/>
+                <DataGridTextColumn Header="RestId" Binding="{Binding RestId}"/>
                 <DataGridTextColumn Header="RestName" Binding="{Binding RestName}"/>
                 <DataGridTextColumn Header="RestSourse" Binding="{Binding RestSourse}" MaxWidth="100"/>
             </DataGrid.Columns>
