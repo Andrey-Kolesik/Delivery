@@ -37,54 +37,81 @@ namespace WpfApp1.Windows
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
-            Restaurants rest = new Restaurants();
-            
-            rest.RestName = NameText.Text;
-            db.restaurants.Add(rest);
-            db.SaveChanges();
-            myDataGrid.ItemsSource = db.restaurants.ToList(); 
-            adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+            try
+            {
+                Restaurants rest = new Restaurants();
+                rest.RestName = NameText.Text;
+                db.restaurants.Add(rest);
+                db.SaveChanges();
+                myDataGrid.ItemsSource = db.restaurants.ToList();
+                adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { }
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            int Id = Convert.ToInt32(IdText.Text);
-            var query = db.restaurants.Where(m => m.RestId == Id).FirstOrDefault();
-            db.restaurants.Remove(query);
-            db.SaveChanges();
-            myDataGrid.ItemsSource = db.restaurants.ToList();
-            adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
-
+            try
+            {
+                int Id = Convert.ToInt32(IdText.Text);
+                var query = db.restaurants.Where(m => m.RestId == Id).FirstOrDefault();
+                db.restaurants.Remove(query);
+                db.SaveChanges();
+                myDataGrid.ItemsSource = db.restaurants.ToList();
+                adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { }
         }
 
         private void Insert_Click(object sender, RoutedEventArgs e)
         {
-            int Id = Convert.ToInt32(IdText.Text);
-            var query = db.restaurants.Where(m => m.RestId == Id).FirstOrDefault();
-            query.RestName = NameText.Text;
-            db.SaveChanges();
-            myDataGrid.ItemsSource = db.restaurants.ToList();
-            adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+            try
+            {
+                int Id = Convert.ToInt32(IdText.Text);
+                var query = db.restaurants.Where(m => m.RestId == Id).FirstOrDefault();
+                query.RestName = NameText.Text;
+                db.SaveChanges();
+                myDataGrid.ItemsSource = db.restaurants.ToList();
+                adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            OpenFileDialog file = new OpenFileDialog();
-            if (file.ShowDialog() == true)
+            try
             {
-                string src = file.FileName;
-                int Id = Convert.ToInt32(IdText.Text);
-                var query = db.restaurants.Where(m => m.RestId == Id).FirstOrDefault();
-                query.RestSourse = src;
-                db.SaveChanges();
-                myDataGrid.ItemsSource = db.restaurants.ToList();
-                adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+                OpenFileDialog file = new OpenFileDialog();
+                if (file.ShowDialog() == true)
+                {
+                    string src = file.FileName;
+                    int Id = Convert.ToInt32(IdText.Text);
+                    var query = db.restaurants.Where(m => m.RestId == Id).FirstOrDefault();
+                    query.RestSourse = src;
+                    db.SaveChanges();
+                    myDataGrid.ItemsSource = db.restaurants.ToList();
+                    adminMenu.dataGrid.ItemsSource = db.restaurants.ToList();
+
+                }
 
             }
-
- 
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { }
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)

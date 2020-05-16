@@ -7,7 +7,7 @@
         mc:Ignorable="d"
        Title="AdminApp" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
     <Grid RenderTransformOrigin="0.562,0.447">
-        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="270" HorizontalAlignment="Left" Background="#FFF5E346" Margin="10" FontSize="15">
+        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="270" HorizontalAlignment="Left" Background="#FFF5E346" Margin="10" FontSize="16" FontFamily="Century Gothic">
             <DataGrid.Columns >
                 <DataGridTextColumn Header="RestId" Binding="{Binding RestId}"/>
                 <DataGridTextColumn Header="RestName" Binding="{Binding RestName}"/>
@@ -52,8 +52,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="RestId" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <Label Content="RestName" HorizontalAlignment="Left" Margin="310,60,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488"/>
+        <Label Content="RestId" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Century Gothic"/>
+        <Label Content="RestName" HorizontalAlignment="Left" Margin="310,60,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488" FontFamily="Century Gothic"/>
     </Grid>
 
 </Window>

@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-         Title="Login" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen">
+         Title="Login" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
     <StackPanel Margin="30, 10, 30, 10" Name="mylogin">
-        <Label Content="Вход" FontSize="32" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <Label Content="Input" FontSize="32" HorizontalAlignment="Left" FontWeight="Bold" FontFamily="Century Gothic"/>
         <Separator Background="Black" Margin="5, 10"/>
-        <Label Content="Логин" FontSize="24" Margin="0, 20, 0 , 0"/>
-        <TextBox x:Name="Login" Background="#C4C4C4" FontSize="30" Width="400" HorizontalAlignment="Left"/>
-        <Label Content="Пароль" FontSize="24" Margin="0, 20, 0 , 0"/>
+        <Label Content="Login" FontSize="24" Margin="0, 20, 0 , 0" FontFamily="Century Gothic"/>
+        <TextBox x:Name="Login" Background="#C4C4C4" FontSize="30" Width="400" HorizontalAlignment="Left" FontFamily="Century Gothic"/>
+        <Label Content="Password" FontSize="24" Margin="0, 20, 0 , 0" FontFamily="Century Gothic"/>
         <PasswordBox x:Name="Password" Background="#C4C4C4" FontSize="30" Width="400" HorizontalAlignment="Left"/>
-        <Button x:Name="Submit" Content="Войти" Click="Submit_Click" FontSize="32" Margin="10, 40" HorizontalAlignment="Right" Width="200" Height="60" BorderBrush="Black" FontFamily="Century Gothic" FontWeight="Bold">
+        <Button x:Name="Submit" Content="Input" Click="Submit_Click" FontSize="32" Margin="10, 40" HorizontalAlignment="Right" Width="200" Height="60" BorderBrush="Black" FontFamily="Century Gothic" FontWeight="Bold">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White"/>
@@ -22,7 +22,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="При входе или регистрации вы принимаете условия" FontSize="20" Margin="0, 60, 0, 0" HorizontalAlignment="Center"/>
-        <Label Content="пользовательского соглашения." FontSize="20" Margin="0, -10, 0, 0" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Label Content="When entering or registering you accept the conditions" FontSize="20" Margin="0, 60, 0, 0" HorizontalAlignment="Center" FontFamily="Century Gothic"/>
+        <Label Content="user agreement." FontSize="20" Margin="0, -10, 0, 0" FontWeight="Bold" HorizontalAlignment="Center" FontFamily="Century Gothic"/>
     </StackPanel>
 </Window>

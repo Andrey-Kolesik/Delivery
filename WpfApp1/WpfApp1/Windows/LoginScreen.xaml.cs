@@ -11,7 +11,7 @@ namespace WpfApp1.Windows
     /// </summary>
     public partial class LoginScreen : Window
     {
-        
+       
         UserContext userDB;
         int IdIccount;
         public static string name;
@@ -52,6 +52,7 @@ namespace WpfApp1.Windows
                     userMain.Show();
                     Close();
                     userMain.userName.Text = Name;
+                    userMain.username.Text = Name;
                     UserMain.Id = IdIccount;
                 }
 
@@ -95,5 +96,7 @@ namespace WpfApp1.Windows
                 return false;
             }
         }
+
+      
     }
 }

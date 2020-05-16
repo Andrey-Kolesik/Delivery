@@ -36,25 +36,24 @@ namespace WpfApp1.Pages
             {
                 foreach (var control in grid.Children.OfType<Label>())
                 {
-                    if (string.IsNullOrWhiteSpace(control.Content.ToString()))
+                    if (control.Content.ToString().Contains("RestName"))
                     {
                         control.Content = value.RestName;
                         db.SaveChanges();
                         break;
 
                     }
-                    
-                }
-                for(int i=1; i<=7;i++)
-                {
+
 
                 }
+
+
                 foreach (Image img in grid.Children.OfType<Image>())
                 {
                     if (!string.IsNullOrWhiteSpace(value.RestSourse))
                     {
-                        
-                        if (string.IsNullOrEmpty(Convert.ToString(img.Source)))
+
+                        if (Convert.ToString(img.Source).Contains("ComingSoon"))
                         {
                             img.Source = new BitmapImage(new Uri(value.RestSourse));
 
@@ -66,16 +65,18 @@ namespace WpfApp1.Pages
                     }
 
 
-                } 
-
-                    
-                    
-
                 }
 
-            }
 
-       
+
+
+
+
+            }
+        }
+
+
+
     }
-    }
+}   
 

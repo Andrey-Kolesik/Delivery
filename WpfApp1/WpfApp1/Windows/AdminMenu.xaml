@@ -7,7 +7,7 @@
         mc:Ignorable="d"
          Title="AdminApp" Height="600" Width="800" Icon="/Images/logo.png" Background="#E6DA76" Top="120" Left="50" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
     <Grid RenderTransformOrigin="0.562,0.447">
-        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="394" HorizontalAlignment="Left" Background="#FFF5E346" Margin="10,10,0,10" FontSize="15">
+        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="364" HorizontalAlignment="Left" Background="#FFF5E346" Margin="10,10,0,10" FontSize="16" FontFamily="Century Gothic">
             <DataGrid.Columns >
                 <DataGridTextColumn Header="FoodId" Binding="{Binding FoodId}"/>
                 <DataGridTextColumn Header="FoodName" Binding="{Binding FoodName}"/>
@@ -16,7 +16,7 @@
                 <DataGridTextColumn Header="Price" Binding="{Binding Price}" MaxWidth="100"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="dataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="220" HorizontalAlignment="Left" Background="#FFF5E346" Margin="478,334,0,10" FontSize="15" RenderTransformOrigin="0.5,0.5">
+        <DataGrid x:Name="dataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Width="239" HorizontalAlignment="Left" Background="#FFF5E346" Margin="478,334,0,10" FontSize="16" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic">
             <DataGrid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -61,13 +61,13 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="FoodId" HorizontalAlignment="Left" Margin="467,10,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <Label Content="FoodName" HorizontalAlignment="Left" Margin="422,63,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488"/>
-        <Label Content="FoodCount" HorizontalAlignment="Left" Margin="422,114,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488"/>
+        <Label Content="FoodId" HorizontalAlignment="Left" Margin="467,10,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Century Gothic"/>
+        <Label Content="FoodName" HorizontalAlignment="Left" Margin="422,63,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.358,0.488" FontFamily="Century Gothic"/>
+        <Label Content="FoodCount" HorizontalAlignment="Left" Margin="422,114,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.358,0.488" FontFamily="Century Gothic"/>
         <TextBox x:Name="RestId" HorizontalAlignment="Left" Height="45" Margin="555,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
-        <Label Content="RestId" HorizontalAlignment="Left" Margin="476,166,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488"/>
+        <Label Content="RestId" HorizontalAlignment="Left" Margin="476,166,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.358,0.488" FontFamily="Century Gothic"/>
         <TextBox x:Name="Price" HorizontalAlignment="Left" Height="45" Margin="555,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
-        <Label Content="Price" HorizontalAlignment="Left" Margin="491,219,0,0" VerticalAlignment="Top" FontSize="25" RenderTransformOrigin="0.358,0.488"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="491,219,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.358,0.488" FontFamily="Century Gothic"/>
 
     </Grid>
 </Window>

@@ -5,20 +5,75 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="520" d:DesignWidth="640"
       Title="OrderFoods">
 
     <Grid x:Name="OrdPage" Background="#FFDEAF94">
-        <ListBox x:Name="List" HorizontalAlignment="Left" Height="162" Margin="502,73,0,0" VerticalAlignment="Top" Width="196"/>
-        <ListBox x:Name="list2" HorizontalAlignment="Left" Height="99" Margin="274,294,0,0" VerticalAlignment="Top" Width="110"/>
-        <Button Content="Выбрать" HorizontalAlignment="Left" Margin="550,240,0,0" VerticalAlignment="Top" Width="132" Height="44" Click="Button_Click"/>
-        <ListBox x:Name="list3" HorizontalAlignment="Left" Height="99" Margin="384,294,0,0" VerticalAlignment="Top" Width="110"/>
-        <ListBox x:Name="list4" HorizontalAlignment="Left" Height="99" Margin="164,294,0,0" VerticalAlignment="Top" Width="110"/>
-        <Button Content="Выбрать" HorizontalAlignment="Left" Margin="325,401,0,0" VerticalAlignment="Top" Width="117" Height="39" Click="Button_Click_1"/>
-        <ListBox x:Name="list5" HorizontalAlignment="Left" Height="94" Margin="84,92,0,0" VerticalAlignment="Top" Width="99"/>
-        <ListBox x:Name="list6" HorizontalAlignment="Left" Height="94" Margin="206,92,0,0" VerticalAlignment="Top" Width="98"/>
-        <Button Content="Принять" HorizontalAlignment="Left" Margin="84,221,0,0" VerticalAlignment="Top" Width="110" Height="29" Click="Button_Click_2"/>
-        <Button Content="Отменить" HorizontalAlignment="Left" Margin="224,221,0,0" VerticalAlignment="Top" Width="110" Height="29" Click="delete"/>
-        <TextBox x:Name="adress" HorizontalAlignment="Left" Height="50" Margin="224,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148"/>
+        <ListBox x:Name="List" HorizontalAlignment="Left" Height="118" Margin="17,53,0,0" VerticalAlignment="Top" Width="132" FontSize="16" FontFamily="Century Gothic"/>
+        <ListBox x:Name="list2" HorizontalAlignment="Left" Height="100" Margin="408,53,0,0" VerticalAlignment="Top" Width="100" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="16" FontFamily="Century Gothic"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="82,176,0,0" VerticalAlignment="Top" Width="132" Height="44" Click="Button_Click" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFE6B7B7" Offset="0.794"/>
+                    <GradientStop Color="#FFCB1212"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="list3" HorizontalAlignment="Left" Height="100" Margin="508,53,0,0" VerticalAlignment="Top" Width="100" FontSize="16" FontFamily="Century Gothic"/>
+        <ListBox x:Name="list4" HorizontalAlignment="Left" Height="100" Margin="308,53,0,0" VerticalAlignment="Top" Width="100" FontSize="16" FontFamily="Century Gothic"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="400,158,0,0" VerticalAlignment="Top" Width="118" Height="39" Click="Button_Click_1" FontSize="16" FontWeight="Bold" FontFamily="Century Gothic">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFE6B7B7" Offset="0.794"/>
+                    <GradientStop Color="#FFCB1212"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="273" Margin="285,247,0,0" Stroke="Black" VerticalAlignment="Top" Width="355">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA3ECB4" Offset="0"/>
+                    <GradientStop Color="#FFFFC5C5" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="Current order" HorizontalAlignment="Left" Margin="400,261,0,0" VerticalAlignment="Top" Height="35" Width="166" FontSize="18" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <ListBox x:Name="list5" HorizontalAlignment="Left" Height="119" Margin="344,301,0,0" VerticalAlignment="Top" Width="116" FontSize="16" FontFamily="Century Gothic"/>
+        <Button Content="Accept" HorizontalAlignment="Left" Margin="333,465,0,0" VerticalAlignment="Top" Width="127" Height="36" Click="Button_Click_2" FontSize="16" FontWeight="Bold" FontFamily="Century Gothic">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFE6B7B7" Offset="0.794"/>
+                    <GradientStop Color="#FFCB1212"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="476,465,0,0" VerticalAlignment="Top" Width="127" Height="36" Click="delete" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFE6B7B7" Offset="0.794"/>
+                    <GradientStop Color="#FFCB1212"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="adress" HorizontalAlignment="Left" Height="92" Margin="21,296,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="240" MaxWidth="240" FontSize="16" FontFamily="Century Gothic"/>
+        <Label Content="List of restaurants" HorizontalAlignment="Left" Margin="42,15,0,0" VerticalAlignment="Top" Height="38" Width="219" FontSize="18" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Label Content="Food choice" HorizontalAlignment="Left" Margin="383,15,0,0" VerticalAlignment="Top" Height="38" Width="220" FontSize="18" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Label Content="Adress" HorizontalAlignment="Left" Margin="42,258,0,0" VerticalAlignment="Top" Height="38" Width="220" FontSize="18" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <ListBox x:Name="List2" HorizontalAlignment="Left" Height="118" Margin="149,53,0,0" VerticalAlignment="Top" Width="132" FontSize="16" FontFamily="Century Gothic"/>
+        <Button x:Name="chek" Content="Check" HorizontalAlignment="Left" Margin="73,457,0,0" VerticalAlignment="Top" Width="132" Height="44" Click="Chek_Click" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFE6B7B7" Offset="0.794"/>
+                    <GradientStop Color="#FFCB1212"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="list6" HorizontalAlignment="Left" Height="119" Margin="460,301,0,0" VerticalAlignment="Top" Width="116" FontSize="16" FontFamily="Century Gothic"/>
+
     </Grid>
 </Page>
